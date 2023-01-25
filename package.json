@@ -9,7 +9,7 @@
     "watch": "tsc -w",
     "test": "jest",
     "cdk": "cdk",
-    "deploy": "npm install && npm install -g cdk && cdk bootstrap && cdk deploy --all --require-approval never",
+    "deploy": "npm install && cdk bootstrap && cdk deploy --all --require-approval never",
     "destroy": "cdk destroy --all --force"
   },
   "devDependencies": {
