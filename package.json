@@ -9,8 +9,8 @@
     "watch": "tsc -w",
     "test": "jest",
     "cdk": "cdk",
-    "deploy": "cdk deploy --all --require-approval never",
-    "destroy": "cdk destroy --all --force"
+    "deploy": "npm install && npm run cdk bootstrap && npm run cdk deploy --all --require-approval never",
+    "destroy": "npm run cdk destroy --all --force"
   },
   "devDependencies": {
     "@types/jest": "^29.2.3",
